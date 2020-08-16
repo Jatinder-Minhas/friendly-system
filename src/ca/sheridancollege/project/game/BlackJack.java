@@ -8,6 +8,7 @@ import java.util.Scanner;
  * This class has the basic methods used to run the game and declaring winner
  *
  * @author Jatinderjitsingh Minhas jun 2020
+ * @author Harmeek jun 2020
  */
 public class BlackJack extends Game
 {
@@ -31,9 +32,11 @@ public class BlackJack extends Game
         else if(dealer.hand.isBust())
             System.out.println("\nYou win!!!!. Dealer got busted");
         else if(human.hand.getPoints() > Dealer.dealer.hand.getPoints())
-            System.out.println("\nYou win!!!!");
-        else if(human.hand.getPoints() == 21 || Dealer.dealer.hand.getPoints() ==  21)
+            System.out.println("\nYou win!!!! you have more points then Dealer");
+        else if(human.hand.getPoints() == 21)
             System.out.println("You Win!!!! You got BlackJack.");
+        else if(Dealer.dealer.hand.getPoints() ==  21)
+            System.out.println("You lose! You got BlackJack.");
     }
     
     /**

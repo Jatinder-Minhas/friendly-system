@@ -9,6 +9,7 @@ import java.util.Scanner;
  *
  * @author Jatinderjitsingh Minhas jun 2020
  * @author Harmeek jun 2020
+ * @author Abhinav Garg jun 2020
  */
 public class BlackJack extends Game
 {
@@ -71,16 +72,16 @@ public class BlackJack extends Game
     @Override
     public void play()
     {
-        Human human = Human.getInstance();
-        Dealer dealer = Dealer.getInstance();
-        Scanner input = new Scanner(System.in);
+        Human human = Human.getInstance(); // Creating Human class object through Singleton pattern
+        Dealer dealer = Dealer.getInstance(); // Creating Dealer class object through Singleton pattern
+        Scanner input = new Scanner(System.in); // Scanner class for getting user input
         
         System.out.println("Do you want to play the game(y or n): ");
-        String choice = input.next();
+        String choice = input.next(); // User choice for playing game or not
         
         
         
-        if(choice.equalsIgnoreCase("y"))
+        if(choice.equalsIgnoreCase("y")) // if statement if user said yes
         {
             System.out.println("\nEnter your name: ");
             input.nextLine();
@@ -90,12 +91,12 @@ public class BlackJack extends Game
             System.out.println("-----------------------------------------------------------------"
                     + "-------------\n");
             
-            System.out.println("Player name: " + human.getName());
+            System.out.println("Player name: " + human.getName()); // print statement to print name of the user
             System.out.print("You Got the following Cards: ");
             System.out.println(human.hand.toString());
             
             
-            System.out.println("\nPlayer name: " + dealer.getName());
+            System.out.println("\nPlayer name: " + dealer.getName()); // print statement to print dealer's name
             System.out.print("Dealer Cards: ");
             System.out.println(dealer.hand.toString());
         
@@ -108,10 +109,10 @@ public class BlackJack extends Game
             
             System.out.println("------------------------------------------------------------"
                     + "-----------------------------\n");
-            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
-            human.hand.getPoints(), dealer.hand.getPoints()))
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(), // if statement to check winner if anyone
+            human.hand.getPoints(), dealer.hand.getPoints()))        // got the blackjack first time
             {
-                declareWinner();
+                declareWinner(); // declaring winner and then exit the game.
                 break;
             }
             
@@ -119,8 +120,8 @@ public class BlackJack extends Game
             System.out.println("\nYour Turn");
             
             boolean move;
-            do
-            {
+            do // do while loop to get user input until
+            {  // user says hit(h) or stand(s)
                 move = false;
                 
                 System.out.println("Do you want to hit or stand (h or s): ");
@@ -128,13 +129,13 @@ public class BlackJack extends Game
                 if(choice.equalsIgnoreCase("h"))
                 { 
                     human.hit();
-                    System.out.println("You choose to hit: ");
+                    System.out.println("You choose to hit: "); // print statement if user chooses to hit
                     System.out.print("Your Cards: ");
                     System.out.print(human.hand.toString());
                 }
                 else if(choice.equalsIgnoreCase("s"))
                 {
-                    System.out.println("\nYou choose to Stand: ");
+                    System.out.println("\nYou choose to Stand: "); // print statement if user chooses to stand
                     System.out.print("Your Cards: ");
                     System.out.print(human.hand.toString());
                 }
@@ -145,30 +146,30 @@ public class BlackJack extends Game
                 }
             }while(move);
             
-            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(), // If statement to check winner
             human.hand.getPoints(), dealer.hand.getPoints()))
             {
                 declareWinner();
                 break;
             }
             
-            System.out.println("Player name: " + dealer.getName());
-            System.out.println("\nDealer Turn: ");
+            System.out.println("\nPlayer name: " + dealer.getName());
+            System.out.println("Dealer Turn: ");
             
-            if(dealer.hit())
-            {
-                System.out.println("Dealer choose to hit: ");
+            if(dealer.hit()) // if-else statement if dealer chooses to
+            {                // hit
+                System.out.println("Dealer choose to hit: "); // print statement if dealer chooses to hit
                 System.out.print("Dealer Cards: ");
                 System.out.print(dealer.hand.toString());
             }
             else
             {
-                System.out.println("Dealer choose to Stand: ");
+                System.out.println("Dealer choose to Stand: "); // print statemnt if dealer chooses to stand
                 System.out.print("Dealer Cards: ");
                 System.out.print(dealer.hand.toString());
             }
             
-            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(), // Again if-else statement to check the winner
             human.hand.getPoints(), dealer.hand.getPoints()))
             {
                 declareWinner();

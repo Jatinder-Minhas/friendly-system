@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Hand 
 {
-    private GroupOfCards group;
+    public GroupOfCards group;
     private Deck deck;
     private int points;
     private ArrayList<Card> hand;
@@ -119,6 +119,11 @@ public class Hand
     public int getSize()
     {
         return hand.size();
+    }
+    
+    public boolean isBlackJack(int points)
+    {
+        return points == 21;
     }
     
     /**

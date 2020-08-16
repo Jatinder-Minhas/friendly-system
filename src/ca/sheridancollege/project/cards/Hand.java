@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Hand 
 {
-    public GroupOfCards group;
+    private GroupOfCards group;
     private Deck deck;
     private int points;
     private ArrayList<Card> hand;
@@ -73,7 +73,7 @@ public class Hand
      * @param card The object of Card used to get the card. 
      * @return the value of card to be returned.
      */
-    private int point(Card card)
+    public int point(Card card)
     {
         
         switch (card.getRank())

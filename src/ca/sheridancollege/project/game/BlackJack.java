@@ -26,16 +26,20 @@ public class BlackJack extends Game
     {   
         Human human = Human.getInstance();
         Dealer dealer = Dealer.getInstance();
+        boolean bustHuman = human.hand.isBust();
+        boolean bustDealer = dealer.hand.isBust();
+        int dealerPoints = dealer.hand.getPoints();
+        int humanPoints = human.hand.getPoints();
         
-        if(human.hand.isBust())
+        if(bustHuman)
             System.out.println("\nYou got busted. Better luck next time.");
-        else if(dealer.hand.isBust())
+        else if(bustDealer)
             System.out.println("\nYou win!!!!. Dealer got busted");
-        else if(human.hand.getPoints() > Dealer.dealer.hand.getPoints())
+        else if(humanPoints > dealerPoints)
             System.out.println("\nYou win!!!! you have more points then Dealer");
-        else if(human.hand.getPoints() == 21)
+        else if(humanPoints == 21)
             System.out.println("You Win!!!! You got BlackJack.");
-        else if(Dealer.dealer.hand.getPoints() ==  21)
+        else if(dealerPoints ==  21)
             System.out.println("You lose! You got BlackJack.");
     }
     
@@ -47,14 +51,16 @@ public class BlackJack extends Game
     {
         Human human = Human.getInstance();
         Dealer dealer = Dealer.getInstance();
+        boolean bustHuman = human.hand.isBust();
+        boolean bustDealer = dealer.hand.isBust();
+        int dealerPoints = dealer.hand.getPoints();
+        int humanPoints = human.hand.getPoints();
         
-        if(human.hand.isBust())
+        if(bustHuman || bustDealer)
             return true;
-        else if(dealer.hand.isBust())
+        else if(humanPoints > dealerPoints)
             return true;
-        else if(human.hand.getPoints() > Dealer.dealer.hand.getPoints())
-            return true;
-        else if(human.hand.getPoints() == 21 || Dealer.dealer.hand.getPoints() ==  21)
+        else if(humanPoints == 21 || dealerPoints ==  21)
             return true;
         else
             return false;

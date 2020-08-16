@@ -45,16 +45,15 @@ public class BlackJack extends Game
     
     /**
      * This method check whether their is a winner or not.
+     * @param bustHuman Boolean value indication whether the human hand is busted or not.
+     * @param bustDealer Boolean value indication whether the dealer hand is busted or not.
+     * @param humanPoints total points of human hand.
+     * @param dealerPoints total points of dealer hand.
      * @return the true if their is a winner.
      */
-    public boolean checkForWin()
+    public boolean checkForWin(boolean bustHuman, boolean bustDealer,
+            int humanPoints, int dealerPoints)
     {
-        Human human = Human.getInstance();
-        Dealer dealer = Dealer.getInstance();
-        boolean bustHuman = human.hand.isBust();
-        boolean bustDealer = dealer.hand.isBust();
-        int dealerPoints = dealer.hand.getPoints();
-        int humanPoints = human.hand.getPoints();
         
         if(bustHuman || bustDealer)
             return true;
@@ -109,7 +108,8 @@ public class BlackJack extends Game
             
             System.out.println("------------------------------------------------------------"
                     + "-----------------------------\n");
-            if(checkForWin())
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
+            human.hand.getPoints(), dealer.hand.getPoints()))
             {
                 declareWinner();
                 break;
@@ -145,7 +145,8 @@ public class BlackJack extends Game
                 }
             }while(move);
             
-            if(checkForWin())
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
+            human.hand.getPoints(), dealer.hand.getPoints()))
             {
                 declareWinner();
                 break;
@@ -167,7 +168,8 @@ public class BlackJack extends Game
                 System.out.print(dealer.hand.toString());
             }
             
-            if(checkForWin())
+            if(checkForWin(human.hand.isBust(),dealer.hand.isBust(),
+            human.hand.getPoints(), dealer.hand.getPoints()))
             {
                 declareWinner();
                 break;

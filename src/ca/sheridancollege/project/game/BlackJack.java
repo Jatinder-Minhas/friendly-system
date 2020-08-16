@@ -129,7 +129,7 @@ public class BlackJack extends Game
                 if(choice.equalsIgnoreCase("h"))
                 { 
                     human.hit();
-                    System.out.println("You choose to hit: "); // print statement if user chooses to hit
+                    System.out.println("\nYou choose to hit: "); // print statement if user chooses to hit
                     System.out.print("Your Cards: ");
                     System.out.print(human.hand.toString());
                 }
@@ -153,7 +153,7 @@ public class BlackJack extends Game
                 break;
             }
             
-            System.out.println("\nPlayer name: " + dealer.getName());
+            System.out.println("\n\nPlayer name: " + dealer.getName());
             System.out.println("Dealer Turn: ");
             
             if(dealer.hit()) // if-else statement if dealer chooses to

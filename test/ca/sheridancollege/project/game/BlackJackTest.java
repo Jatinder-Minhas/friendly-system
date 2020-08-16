@@ -6,7 +6,8 @@ import org.junit.Test;
 /**
  *
  * @author jatinderjitSingh jun 2020
- * @author Harmeek
+ * @author Harmeek jun 2020
+ * @author Abhinav Garg jun 2020
  */
 public class BlackJackTest
 {

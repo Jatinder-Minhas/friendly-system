@@ -37,8 +37,9 @@ public class Dealer extends BlackjackPlayer
             hand.addCard();
             return true;
         }
-        else
+        else {
             return false;
+        }
     }
     
 }

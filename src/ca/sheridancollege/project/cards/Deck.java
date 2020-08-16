@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Deck 
 {
-    private ArrayList<Card> deck; // ArrayList of type Card to store Deck
+    public ArrayList<Card> deck; // ArrayList of type Card to store Deck
     private GroupOfCards group;
     
     

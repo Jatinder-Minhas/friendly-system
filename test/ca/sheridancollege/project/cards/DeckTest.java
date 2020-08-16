@@ -28,7 +28,7 @@ public class DeckTest {
         System.out.println("borrowCard");
         Deck instance = new Deck();
         Card lastCard = new Card(Card.RANK.FIVE, Card.SUIT.HEARTS);
-        instance.deck.add(lastCard);
+        instance.deck.add(lastCard); // For this test to work change access modifier of deck array list to public
         Card expResult = lastCard;
         Card result = instance.borrowCard();
         assertEquals(expResult, result);

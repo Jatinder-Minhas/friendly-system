@@ -6,12 +6,13 @@ import java.util.ArrayList;
  * This class models the Hand of Card for the Player
  *
  * @author Jatinderjitsingh Minhas jun 2020
+ * @author Abhinav Garg
  */
 public class Hand 
 {
     private GroupOfCards group;
     private Deck deck;
-    private int points;
+    public int points;
     private ArrayList<Card> hand;
     public boolean bust;
     
@@ -67,6 +68,7 @@ public class Hand
         calculatePoints();
         return points;
     }
+    
     
     /**
      * This method is used to return the value of the single card.

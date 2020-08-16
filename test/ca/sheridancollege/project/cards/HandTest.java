@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author bhatt
+ * @author Abhinav Garg
  */
 public class HandTest {
     
@@ -42,19 +42,6 @@ public class HandTest {
         int points = 12;
         Hand instance = new Hand();
         boolean expResult = false;
-        boolean result = instance.isBlackJack(points);
-        assertEquals(expResult, result);
-    }
-    
-    /**
-    * Test of isBlackJack method, of class Hand. for Boundary Test
-    */
-    @Test
-    public void testIsBlackJackBoundary() {
-        System.out.println("isBlackJackBoundary");
-        int points = 21;
-        Hand instance = new Hand();
-        boolean expResult = true;
         boolean result = instance.isBlackJack(points);
         assertEquals(expResult, result);
     }

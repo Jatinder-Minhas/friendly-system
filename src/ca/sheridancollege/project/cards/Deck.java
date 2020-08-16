@@ -6,10 +6,11 @@ import java.util.ArrayList;
  * This class Generate and model the Deck of cards.
  *
  * @author Jatinderjitsingh Minhas jun 2020
+ * @author Abhinav Garg
  */
 public class Deck 
 {
-    public ArrayList<Card> deck; // ArrayList of type Card to store Deck
+    private ArrayList<Card> deck; // ArrayList of type Card to store Deck
     private GroupOfCards group;
     
     

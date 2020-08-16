@@ -26,7 +26,6 @@ public class BlackJackTest
         System.out.println("declareWinner");
         BlackJack instance = new BlackJack("");
         instance.declareWinner();
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**

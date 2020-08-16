@@ -137,7 +137,7 @@ public class Hand
         
         for(Card c : hand)
         {
-            s += c.getRank().toString() + " ";
+            s += c.getRank().toString() + " of " + c.getSuit().toString() + " , ";
         }
         
         return s;

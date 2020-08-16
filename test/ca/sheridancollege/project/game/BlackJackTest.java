@@ -1,8 +1,3 @@
-/*
- * Jatinderjitsingh Minhas
- * Student ID: 998815302
- * SYST10199 - Web Programming
- */
 package ca.sheridancollege.project.game;
 
 import static org.junit.Assert.assertEquals;
@@ -10,7 +5,8 @@ import org.junit.Test;
 
 /**
  *
- * @author jatinder
+ * @author jatinderjitSingh jun 2020
+ * @author Harmeek
  */
 public class BlackJackTest
 {

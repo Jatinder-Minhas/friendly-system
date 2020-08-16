@@ -121,6 +121,11 @@ public class Hand
         return hand.size();
     }
     
+    /**
+     * This method checks whether the hand contains black jack
+     * @param points The points of hand
+     * @return return true if point == 21
+     */
     public boolean isBlackJack(int points)
     {
         return points == 21;

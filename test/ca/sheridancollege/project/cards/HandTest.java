@@ -5,8 +5,6 @@
  */
 package ca.sheridancollege.project.cards;
 
-import java.util.ArrayList;
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -61,6 +59,10 @@ public class HandTest {
         assertEquals(expResult, result);
     }
     
+    /**
+     * Test for point method.
+     * This test cannot be divided into good, bad and boundary
+     */
     @Test
     public void testpoint()
     {

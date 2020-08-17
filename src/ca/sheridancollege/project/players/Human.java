@@ -4,8 +4,8 @@ import ca.sheridancollege.project.cards.Hand;
 
 /**
  * This class model the basic Human player
- * @author Jatinderjitsingh Minhas jun 2020
- * @auther Harmeek jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
+ * @auther Harmeek August 2020
  */
 public class Human extends BlackjackPlayer{
 

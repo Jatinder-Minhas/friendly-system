@@ -10,8 +10,8 @@ package ca.sheridancollege.project.players;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @author Jatindejitsingh Minhas jun 2020
- * @auther Harmeek jun 2020
+ * @author Jatindejitsingh Minhas August 2020
+ * @auther Harmeek August 2020
  */
 public abstract class Player {
 

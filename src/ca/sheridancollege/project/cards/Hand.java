@@ -5,8 +5,8 @@ import java.util.ArrayList;
 /**
  * This class models the Hand of Card for the Player
  *
- * @author Jatinderjitsingh Minhas jun 2020
- * @author Abhinav Garg
+ * @author Jatinderjitsingh Minhas August 2020
+ * @author Abhinav Garg August 2020
  */
 public class Hand 
 {

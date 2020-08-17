@@ -4,7 +4,7 @@ import ca.sheridancollege.project.cards.Hand;
 
 /**
  * This class models the Dealer and contain methods related to the BlackJack Dealer.
- * @author Jatinderjitsingh Minhas jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
  */
 public class Dealer extends BlackjackPlayer
 {

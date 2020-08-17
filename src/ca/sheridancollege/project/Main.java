@@ -5,7 +5,7 @@ import ca.sheridancollege.project.game.BlackJack;
 /**
  * This is the Main Class.
  *
- * @author Jatinderjitsingh Minhas jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
  */
 public class Main
 {

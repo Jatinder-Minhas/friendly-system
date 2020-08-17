@@ -16,7 +16,7 @@ import java.util.Random;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @author Jatinderjitsingh Minhas jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
  */
 public class GroupOfCards {
 

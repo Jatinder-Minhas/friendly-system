@@ -5,8 +5,8 @@ import java.util.ArrayList;
 /**
  * This class Generate and model the Deck of cards.
  *
- * @author Jatinderjitsingh Minhas jun 2020
- * @author Abhinav Garg
+ * @author Jatinderjitsingh Minhas August 2020
+ * @author Abhinav Garg August 2020
  */
 public class Deck 
 {

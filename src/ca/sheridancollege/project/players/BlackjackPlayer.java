@@ -3,8 +3,8 @@ package ca.sheridancollege.project.players;
 /**
  * This is the general class for blackjack player
  *
- * @author Jatinderjitsingh Minhas jun 2020
- * @author Harmeek jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
+ * @author Harmeek August 2020
  */
 public abstract class BlackjackPlayer extends Player {
 

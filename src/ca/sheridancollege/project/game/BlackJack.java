@@ -7,9 +7,9 @@ import java.util.Scanner;
 /**
  * This class has the basic methods used to run the game and declaring winner
  *
- * @author Jatinderjitsingh Minhas jun 2020
- * @author Harmeek jun 2020
- * @author Abhinav Garg jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
+ * @author Harmeek August 2020
+ * @author Abhinav Garg August 2020
  */
 public class BlackJack extends Game
 {

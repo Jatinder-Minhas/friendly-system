@@ -10,7 +10,7 @@ package ca.sheridancollege.project.cards;
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
  *
  * @author dancye
- * @author Jatinderjitsingh Minhas jun 2020
+ * @author Jatinderjitsingh Minhas August 2020
  */
 public class Card {
     
